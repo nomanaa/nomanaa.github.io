@@ -4,7 +4,7 @@ Describing the practical steps of how to host and format a resume using Markdown
 ## Prerequisities
 To start , you already need to have a resume written in Markdown language. If you are not familiar with Markdown and haven't yet have your resume ready in markdown, I have inculded links under _More Resource_ sections. You can go through the tutorial and make the resume in Markdown. 
 ## Instructions
-1. **Choosing Lightweight Markup**
+1. **Choosing Lightweight Markup**\
  Andrew Etter in his book explained why we should use Markup language instead of XML or HTML. I will breifly point them out below:
 * When we store content in XML based language, It makes it difficult for people to make contribution
 * Markdown has the cleanest syntax.
@@ -15,7 +15,7 @@ Right now we will be using the Markdown language.  In order to write the resume 
 
 Once we have the resume ready and written in Markdown language, We can move forward to the next step that is where and how to host the resume online. 
 
-2. **Use Distributed Version Control(GitHub)**
+2. **Use Distributed Version Control(GitHub)**\
 Andrew Etter in his book preferred distributed version control systems(DVCS) over centralized system. According to him DVCS performs better and it also lets people work offline.The author also instructed to have a file named _README.md_ in the root of the repository. The _README.md_ file should have a concise summary of what is being documented and steps on how to build the documentation locally. Additionally, It should also include steps on how to make contribution on the project or product. 
 
 For our purpose we will use GitHhub which is also a DVCS. To start, we first need to create an user account on GitHub If we already don't have one. 
@@ -33,8 +33,17 @@ Once you are logged into our account,  Follow the following steps:
 >2. Click on the _choose your files_ option and select both your resume and ReadMe file. Make sure the name of your resume file is named as index.md and your readme file is named as README.md
 >3. click on the green button that says _Commit changes_
 Now you will be able to see the files in your repository. 
-* Host online by generating Static Websites
->1. 
+* **Host online by generating Static Websites**\
+>1. Now once you are inside the repository and can see README file, look at top left corner and Click on _Settings_.
+>2. Once you are in settings look at the left side and click on _pages_
+>3. Now click on the _publish page_ option. You will see a message saying _ Your site is published at https://username.github.io/
+>4. Afterwards look right below where it says _Theme Chooser_ and click on _Change Theme_
+>5. Now you will see some themes or templates from Jekyll that you can implement in your page. Click on one of the theme that you have choosen and then click the green button on the right hand  under the theme options that says _select theme_
+>6. Now click on the link again where it says your site is published at. You will be able to see your resume with the theme you have choosen. 
+* **More Resources**
+## Author and Acknowledgement
+
+## FAQ
 
 
 
