@@ -9,10 +9,9 @@ To start , you already need to have a resume written in Markdown language. If yo
 * When we store content in XML based language, It makes it difficult for people to make contribution
 * Markdown has the cleanest syntax.
 * Due to Markdown's popularity there are many dedicated text editors available. 
-* Lightweight markup is free and easy to make changes 
-..
-Right now we will be using the Markdown language.  In order to write the resume in Markdown we need to choose a text editor. There are many text editors available. [Typora](https://typora.io/) is a very useful one. Please visit the _more resources_ section to find out more details about it. 
+* Lightweight markup is free and easy to make changes.
 
+Right now we will be using the Markdown language.  In order to write the resume in Markdown we need to choose a text editor. There are many text editors available. [Typora](https://typora.io/) is a very useful one. Please visit the _more resources_ section to find out more details about it. 
 Once we have the resume ready and written in Markdown language, We can move forward to the next step that is where and how to host the resume online. 
 
 2. **Use Distributed Version Control(GitHub)**\
@@ -51,8 +50,9 @@ There are many reasons to use static website to show our resume online. Author A
 This article is written by Abdullah Al noman. 
 Special courtesy goest to Andrew Etter's books and my COMP 3040 group member.
 ## FAQ
-1._Why is Markdown better than word processor?_\
->Accroding to the author of Modern technical writing, Markdown is better than word processor because it does not have an instance like word processor. So none can hack it. Markdwon also does not have comment section. Hence, bots can not spam it. Markdown also never crashes.\
+1. _Why is Markdown better than word processor_?
+>Accroding to the author of Modern technical writing, Markdown is better than word processor because it does not have an instance like word processor. So none can hack it. Markdwon also does not have comment section. Hence, bots can not spam it. Markdown also never crashes.
+>
 2. _Why is my resume not showing up_?
 >Sometimes pages takes up to 20 minutes to build and deploy. So if you do not see your resume right away, wait for more than 20 minutes and then check it. Also, make sure you are putting the correct URL with your username spelled correctly.
 
