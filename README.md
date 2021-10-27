@@ -42,6 +42,8 @@ There are many reasons to use static website to show our resume online. Author A
 >5. Now you will see some themes or templates from Jekyll that you can implement in your page. Click on one of the theme that you have choosen and then click the green button on the right hand  under the theme options that says _select theme_
 >6. Now click on the link again where it says your site is published at. You will be able to see your resume with the theme you have choosen. 
 
+Your final resume should look like the this on the website,
+![Resume](https://github.com/nomanaa/nomanaa.github.io/blob/main/ResumeGIF.gif)
 * **More Resources**
 >1. To know details about Markdown and to learn it : [Markdown](https://www.markdowntutorial.com/)
 >2. Link to Andrew Etter's book: [Modern Technical Writing](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
