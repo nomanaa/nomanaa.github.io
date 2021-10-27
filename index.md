@@ -21,16 +21,16 @@ Major in Computer Science and Minor in Business Management
 
 ## Personal Projects
 
-* Developed an e-commerce android app for a local Business
+* Developed an e-commerce android app for a local business
 * Developed the[ _SpaceInvader_](https://sayeedkhannabil.github.io/SpaceInvader/) game on Unity
 * Built personal website using HTML, JavaScript and CSS
 
 ## Achievements
 
 * Deans honours list
-* International Student undergraduate Scholarship
+* International student undergraduate Scholarship
 
 ## Volunteering Experience
 
-* Peer mentor for a new International Student
+* Served as a Peer Mentor for a new International Student
 * Volunteered in UM Open House
