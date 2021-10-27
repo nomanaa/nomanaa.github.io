@@ -2,14 +2,14 @@
  Computer Science Student
 
 ## Contacts
-Email: abdullahalnoman127@gmail.com
-Website:[abdulnoman.com](www.abdulnoman.com)
-LinkedIn: [Abdullah Noman](https://www.linkedin.com/in/abdullah-al-noman-669598190/)
-GitHub: [Abdullah Noman](https://github.com/nomanaa)
+Email: abdullahalnoman127@gmail.com\
+Website: [abdulnoman.com](www.abdulnoman.com)\
+LinkedIn: [Abdullah Noman](https://www.linkedin.com/in/abdullah-al-noman-669598190/)\
+GitHub: [nomanaa](https://github.com/nomanaa)
 
 ## Education
 ### University of Manitoba
-Major in Computer Science and Minor in Business
+Major in Computer Science and Minor in Business Management
 
 ## Technical Skills
 
@@ -17,6 +17,7 @@ Major in Computer Science and Minor in Business
 * **C++**
 * **JavaScript**
 * **R**
+*  **C#**
 
 ## Personal Projects
 
