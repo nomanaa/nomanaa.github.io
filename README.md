@@ -41,9 +41,14 @@ Now you will be able to see the files in your repository.
 >5. Now you will see some themes or templates from Jekyll that you can implement in your page. Click on one of the theme that you have choosen and then click the green button on the right hand  under the theme options that says _select theme_
 >6. Now click on the link again where it says your site is published at. You will be able to see your resume with the theme you have choosen. 
 * **More Resources**
+>1. To know details about Markdown and to learn it : [Markdown](https://www.markdowntutorial.com/)
+>2. Link to Andrew Etter's book: [Modern Technical Writing](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
+>3. Details about Jekyll: [Jekyll](https://jekyllrb.com/)
 ## Author and Acknowledgement
-
+This article is written by Abdullah Al noman. 
+Special courtesy goest to Andrew Etter's books and my COMP 3040 group member.
 ## FAQ
-
+>1._Why is Markdown better than word processor?_\
+>2. _Why is my resume not showing up_?
 
 
