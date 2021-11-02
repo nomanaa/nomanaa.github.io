@@ -19,16 +19,16 @@ For our purpose we will use GitHhub which is also a DVCS. To start, you first ne
 
 Once you are logged into your account, Follow the following steps:
 * **Create a repository**
-> 1. Click on _Repositories_
-> 2. Click the green button which says _New_.
-> 3. Name the repository as username.github.io where username is your username on GitHub . Be careful about the username since it has to match your username exactly in order to work.
-> 4. Scroll down and choose _Public_.
-> 5. Scroll down and check off the box that says _Add a README file_ . If you are going to write the README file in a text editor and later upload to the repository, you can ignore this.
-> 6. Click on _Create repository_.
+ 1. Click on _Repositories_
+ 2. Click the green button which says _New_.
+ 3. Name the repository as username.github.io where username is your username on GitHub . Be careful about the username since it has to match your username exactly in order to work.
+ 4. Scroll down and choose _Public_.
+ 5. Scroll down and check off the box that says _Add a README file_ . If you are going to write the README file in a text editor and later upload to the repository, you can ignore this.
+ 6. Click on _Create repository_.
 * **Add files to the repository**
->1. Once you have created the repostory , you will see a quick setup screen. click on _uploading an existing file_.
->2. Click on the _choose your files_ option and select both your resume and ReadMe file. Make sure the name of your resume file is named as index.md and your readme file is named as README.md.
->3. Click on the green button that says _Commit changes_.
+ 1. Once you have created the repostory , you will see a quick setup screen. click on _uploading an existing file_.
+ 2. Click on the _choose your files_ option and select both your resume and ReadMe file. Make sure the name of your resume file is named as index.md and your readme file is named as README.md.
+ 3. Click on the green button that says _Commit changes_.
 Now you will be able to see the files in your repository. 
 * **Host online by generating a static website**
 
@@ -36,12 +36,12 @@ There are many reasons to use static website to show our resume online. Author A
 
 Below are the steps you can follow to generate a static website to show your resume:
 
->1. Once you are inside the repository and can see README file, look at top left corner and Click on _Settings_.
->2. Once you are in settings look at the left side and click on _pages_.
->3. Now click on the _publish page_ option. You will see a message saying _ Your site is published at https://username.github.io/.
->4. Afterwards look right below where it says _Theme Chooser_ and click on _Change Theme_.
->5. Now you will see some themes or templates from Jekyll that you can implement in your page. Click on one of the theme that you have choosen and then click the green button on the right hand  under the theme options that says _select theme_.
->6. Now click on the link again where it says your site is published at. You will be able to see your resume with the theme you have choosen. 
+1. Once you are inside the repository and can see README file, look at top left corner and Click on _Settings_.
+2. Once you are in settings look at the left side and click on _pages_.
+3. Now click on the _publish page_ option. You will see a message saying _ Your site is published at https://username.github.io/.
+4. Afterwards look right below where it says _Theme Chooser_ and click on _Change Theme_.
+5. Now you will see some themes or templates from Jekyll that you can implement in your page. Click on one of the theme that you have choosen and then click the green button on the right hand  under the theme options that says _select theme_.
+6. Now click on the link again where it says your site is published at. You will be able to see your resume with the theme you have choosen. 
 
 Your final [resume](https://nomanaa.github.io/) should look like the this on the website,
 ![Resume](https://github.com/nomanaa/nomanaa.github.io/blob/main/ResumeGIF.gif)
