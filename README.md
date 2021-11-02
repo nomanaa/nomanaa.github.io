@@ -32,7 +32,7 @@ Once you are logged into your account, Follow the following steps:
 Now you will be able to see the files in your repository. 
 * **Host online by generating a static website**
 
-There are many reasons to use static website to show our resume online. Author Andrew Etter mentioned some of the advantages of static website in his book _Modern technical Writing_. Some of the advantages he mentioned are that the static websites are simple,portable and secured. He also added migrating the entire website is really easy too since they have no server-side application dependencies and no database. 
+>There are many reasons to use static website to show our resume online. Author Andrew Etter mentioned some of the advantages of static website in his book _Modern technical Writing_. Some of the advantages he mentioned are that the static websites are simple,portable and secured. He also added migrating the entire website is really easy too since they have no server-side application dependencies and no database. 
 
 Below are the steps you can follow to generate a static website to show your resume:
 
