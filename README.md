@@ -15,7 +15,7 @@ Once you have the resume ready and written in Markdown language, We can move for
 
 >Author Andrew Etter prefers distributed version control systems(DVCS) over centralized system. According to him DVCS performs better and it also lets people work offline.The author also instructed to have a file named _README.md_ in the root of the repository. The _README.md_ file should have a concise summary of what is being documented and steps on how to build the documentation locally. Additionally, It should also include steps on how to make contribution on the project or product. 
 
-For our purpose we will use GitHhub which is also a DVCS. To start, you first need to create an user account on GitHub If you already don't have one. 
+For our purpose we will use GitHub which is also a DVCS. To start, you first need to create an user account on GitHub If you already don't have one. 
 
 Once you are logged into your account, Follow the following steps:
 * **Create a repository**
@@ -34,11 +34,11 @@ Now you will be able to see the files in your repository.
 
 >There are many reasons to use static website to show our resume online. Author Andrew Etter mentioned some of the advantages of static website in his book _Modern technical Writing_. Some of the advantages he mentioned are that the static websites are simple,portable and secured. He also added migrating the entire website is really easy too since they have no server-side application dependencies and no database. 
 
-Below are the steps you can follow to generate a static website to show your resume:
+ Below are the steps you can follow to generate a static website to show your resume:
 
 1. Once you are inside the repository and can see README file, look at top left corner and Click on _Settings_.
 2. Once you are in settings look at the left side and click on _pages_.
-3. Now click on the _publish page_ option. You will see a message saying _ Your site is published at https://username.github.io/.
+3. Now click on the _publish page_ option. You will see a message saying _Your site is published_ at https://username.github.io/.
 4. Afterwards look right below where it says _Theme Chooser_ and click on _Change Theme_.
 5. Now you will see some themes or templates from Jekyll that you can implement in your page. Click on one of the theme that you have choosen and then click the green button on the right hand  under the theme options that says _select theme_.
 6. Now click on the link again where it says your site is published at. You will be able to see your resume with the theme you have choosen. 
@@ -52,7 +52,7 @@ Your final [resume](https://nomanaa.github.io/) should look like the this on the
 >4. Downloading a text editor, Typora: [Typora](https://typora.io/)
 ## Author and Acknowledgement
 This article is written by Abdullah Al Noman. 
-Special credit goes to author Andrew Etter for his book _Modern Technical Writing_ and my COMP 3040 group members.
+Special credit goes to author Andrew Etter for his book _Modern Technical Writing_ and my COMP 3040 group members Abu Yasin Sabik,Jaden Down, Muhammad Hasan Saleem, and Long Vu.
 ## FAQ
 1. _Why is Markdown better than word processor_?
 >Accroding to the author of Modern technical writing, Markdown is better than word processor because it does not have an instance like word processor. So no one can hack it. Markdwon also does not have comment section. Hence, bots can not spam it. Markdown also never crashes.
