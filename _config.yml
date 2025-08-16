@@ -13,6 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# Identify your repo + correct URLs
+repository: abdul-noman/abdul-noman.github.io
+url: "https://abdul-noman.github.io"
+baseurl: ""   # keep empty for a user site; use "/REPO-NAME" for a project site
 title: MM
 email:
 description: >- # this means to ignore newlines until "baseurl:"
