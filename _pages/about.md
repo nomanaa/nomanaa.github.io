@@ -2,7 +2,7 @@
 permalink: /about/
 title: "About Me"
 ---
-Hi, I’m **Noman** — a cybersecurity professional driven by curiosity, persistence, and a passion for solving complex problems. What started as an interest in how systems break quickly grew into a career focused on **how to secure them**.  
+Hi, I’m **Abdul** — a cybersecurity professional driven by curiosity, persistence, and a passion for solving complex problems. What started as an interest in how systems break quickly grew into a career focused on **how to secure them**.  
 
 I’m currently working in **cybersecurity consulting**, where I help organizations design secure architectures, detect threats, and respond to incidents. Every day brings a new challenge: whether it’s analyzing logs to uncover hidden patterns, automating security workflows, or aligning defenses with frameworks like **NIST** and **ISO 27001**. That constant evolution is exactly what excites me — in security, standing still isn’t an option.  
 
