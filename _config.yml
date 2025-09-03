@@ -64,7 +64,7 @@ plugins:
 author:
   name   : "Abdullah Noman"
   avatar : "/assets/images/avatar_square.jpg"
-  bio    : "Enthusiastic Cyber Security Professional. Lifelong Manchester United Supporter."
+  bio    : "Cybersecurity Professional & Lifelong Manchester United Supporter."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
