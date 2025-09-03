@@ -1,6 +1,6 @@
 ---
 title: "Replicating Adversary Behavior with the MITRE ATT&CK Framework"
-date: 2025-09-03 12:30:00 -0500
+date: 2025-09-03 11:30:00 -0500
 categories:
   - blog
 tags:
