@@ -1,6 +1,6 @@
 ---
 title: "Threat Hunting Through Logs and Networking"
-date: 2025-09-03T15:34:30-04:00
+date: 2025-09-03T10:30:30-05:00
 categories:
   - blog
 tags:
