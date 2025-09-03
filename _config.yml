@@ -17,7 +17,7 @@
 repository: nomanaa/nomanaa.github.io
 url: "https://nomanaa.github.io"
 baseurl: ""   # keep empty for a user site; use "/REPO-NAME" for a project site
-title: Abdullah Noman | Cybersecurity Portfolio
+title: Abdullah Noman | Cybersecurity Portfolio & Blog
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -64,7 +64,7 @@ plugins:
 author:
   name   : "Abdullah Noman"
   avatar : "/assets/images/avatar_square.jpg"
-  bio    : "Enthusiastic Cyber Security Professional. Lifelong Manchester United Supporter"
+  bio    : "Enthusiastic Cyber Security Professional. Lifelong Manchester United Supporter."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
