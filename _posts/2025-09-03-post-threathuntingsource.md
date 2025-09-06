@@ -1,5 +1,5 @@
 ---
-title: "Threat Hunting Through Logs and Networking"
+title: "From Endpoints to Networks: Understanding Log Sources in Threat Hunting"
 date: 2025-09-03T10:30:30-05:00
 categories:
   - blog
