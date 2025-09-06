@@ -64,7 +64,7 @@ Advanced tools extend this further:
 
 ---
 
-## Network and Security Data Sources
+## Logs from Networking tools
 
 Outside endpoints, networking gear and infrastructure also generate crucial logs:
 
@@ -74,22 +74,22 @@ Outside endpoints, networking gear and infrastructure also generate crucial logs
 - **Active Directory and Kerberos:** Track user authentication and access attempts.  
 - **IAM/PAM systems:** Record privileged access and identity events.  
 
-Security software contributes as well. For instance, **Windows Defender** produces logs inside Event Viewer that may indicate malware activity. Antivirus alerts, when mapped with threat intelligence, can even reveal links to advanced persistent threat (APT) groups.
+Security software contributes as well. For instance, **Windows Defender**, a native anti-virus software for windows, produces logs inside Event Viewer that may indicate malware activity. Antivirus alerts, when mapped with threat intelligence, can even reveal links to advanced persistent threat (APT) groups.
 
 ---
 
 ## Pulling It All Together
 
-Ultimately, threat hunting is about connecting the dots between **endpoints, networks, and security systems**. Each of these three categories produces logs that provide clues:
+Ultimately, threat hunting is about correlating the logs collected from **endpoints, networks, and security systems**. A summary of the logs each of these three categories produces are:
 
 - **Endpoints:** Application, system, PowerShell, and Sysmon logs.  
 - **Networks:** Router, switch, DNS, and webserver data.  
 - **Security systems:** Active Directory, Kerberos, IAM, antivirus, and EDR tools.  
 
-By combining these data sources and layering them over a solid understanding of how networks function, threat hunters can move beyond random alerts and start identifying real threats hiding in plain sight.
+By combining these data sources and layering them over a solid understanding of the system infrastructre of the organization, a security analyst can move beyond random alerts and start identifying real threats hiding in plain sight.
 
 ---
 
-There is no “one-size-fits-all” data source in threat hunting. Effective hunting requires a deep understanding of your environment, the ability to interpret logs, and the context to relate them back to your organization’s unique needs.  
+Last but not least, There is no “one-size-fits-all” data source in threat hunting. Effective hunting requires a deep understanding of your environment, the ability to interpret logs, and the context to relate them back to your organization’s unique needs.  
 
 The insights presented here are adapted from _Practical Threat Intelligence and Data-Driven Threat Hunting_, **Chapter 3: Where Does the Data Come From**, by Valentina Palacín.  
