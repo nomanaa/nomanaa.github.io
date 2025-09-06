@@ -1,6 +1,6 @@
 ---
-title: "Replicating Adversary Behavior with the MITRE ATT&CK Framework"
-date: 2025-09-03 11:30:00 -0500
+title: "Understanding Adversary Behavior with the MITRE ATT&CK Framework"
+date: 2025-09-05 11:30:00 -0500
 categories:
   - blog
 tags:
@@ -8,100 +8,90 @@ tags:
   - Threat Hunting
   - Cybersecurity
 ---
+*"If you know the enemy and know yourself, you need not fear the result of a hundred battles."* — Sun Tzu, *The Art of War*  
 
-> **Summary:**  
-> This blog post explains how to replicate adversary behavior and how to work with the MITRE ATT&CK framework.  
-> We’ll explore what ATT&CK is, the 14 tactics it covers, and how mapping with ATT&CK helps blue and red teams understand adversary techniques.
-
----
-
-# How to Replicate Adversary Behavior
-
-Replicating adversary behavior means simulating the activities an attacker would carry out to achieve their goals.  
-By copying the steps of a real-world attacker, defenders can study how systems respond and learn how to detect or prevent those actions.  
-The MITRE ATT&CK framework is the guide for this process.
+In cybersecurity, this principle holds true: defending effectively requires understanding how attackers think and how they exploit systems. The MITRE ATT&CK framework provides a structured way to do exactly that. This blog post aims to explain how to replicate adversary behavior and how to work with the MITRE ATT&CK framework. We’ll explore what ATT&CK is, the 14 tactics it covers, and how mapping with ATT&CK helps blue and red teams understand adversary techniques.  
 
 ---
 
-# The ATT&CK Framework
+# What is The ATT&CK Framework? 
 
-The **ATT&CK framework** is a descriptive model used to label and study the activities that a threat actor is capable of carrying out.  
-It applies to enterprise environments, cloud environments, and even industrial control systems.  
+According to *Practical Threat Intelligence and Data-Driven Threat Hunting* by Valentina Palacín,  
 
-Key features:
+> *“The ATT&CK Framework is a descriptive model used to label and study the activities that a threat actor is capable of carrying out in order to get a foothold and operate inside an enterprise environment, a cloud environment, smartphones, or even industrial control systems.”*  
+
+Key features of the ATT&CK Framework include:  
 - Provides a **common taxonomy** for the cybersecurity community to describe adversary behavior.  
-- Works as a **common language** for defenders and attackers.  
-- Contains **14 main tactics** that represent different stages of an attack.  
-
+- Serves as a **common language** for both offensive and defensive researchers.  
+- Contains **14 main tactics** that represent different stages of an attack.
+    
 ---
 
-## The 14 Tactics
+## Tactics, Techniques and Procedures 
 
-1. **Reconnaissance:** Gathering information about the victim.  
-2. **Resource Development:** Assessing or creating resources to support the operation. *(Reconnaissance and Resource Development fall into the pre-breach stage.)*  
-3. **Initial Access:** The first foothold in the victim’s environment.  
-4. **Execution:** Running malicious code inside the environment.  
-5. **Persistence:** Remaining in the system even after reboot or shutdown.  
-6. **Privilege Escalation:** Elevating access after entering with a low-privilege account.  
-7. **Defense Evasion:** Avoiding detection by altering or removing traces.  
-8. **Credential Access:** Stealing legitimate credentials.  
-9. **Discovery:** Learning about the victim’s environment and setup.  
-10. **Lateral Movement:** Pivoting from one system to another.  
-11. **Collection:** Gathering information for later exfiltration.  
-12. **Command and Control:** Communicating with systems under the attacker’s control.  
-13. **Exfiltration:** Stealing data while remaining undetected.  
-14. **Impact:** Preventing the victim from accessing systems.  
+The MITRE ATT&CK framework is organized into 14 tactics, each representing an attacker’s objective and containing a set of related techniques. In other words, a tactic explains the *“why”* behind an adversary’s behavior.  
+The list of tactics are below: 
 
-Each tactic includes many **techniques**, which are further broken into **sub-techniques**.  
-The most specific level is the **procedure**—the exact command or method an adversary uses.  
+1. **Reconnaissance:** The objective of this tactic is to gather as much information as possible about the victim.  
+2. **Resource Development:** In this stage, the attacker assesses the resources they can use to support the operation. This can range from legitimate tools to stolen software. *(Reconnaissance and Resource Development fall into the pre-breach stage.)*  
+3. **Initial Access:** The attacker’s first step into the victim’s environment, where they manage to gain a foothold in the network.  
+4. **Execution:** In this tactic, the attacker attempts to run malicious code inside the environment.  
+5. **Persistence:** The threat actor uses techniques in this category to remain in the system even after reboots or shutdowns.  
+6. **Privilege Escalation:** The threat actor uses techniques to elevate access after entering with a low-privilege account.  
+7. **Defense Evasion:** The threat actor avoids detection by altering, disabling, or removing traces of their activity.  
+8. **Credential Access:** At times the threat actor steals legitimate credentials to gain further access into the system.  
+9. **Discovery:** Techniques involving learning about the victim’s environment, infrastructure, and setup.  
+10. **Lateral Movement:** After understanding the victim’s network infrastructure, the attacker pivots from one system to another.  
+11. **Collection:** Gathering information and data for later exfiltration.  
+12. **Command and Control:** Techniques used by the threat actor to communicate with systems under their control.  
+13. **Exfiltration:** Stealing data while remaining undetected, or in some cases encrypting it for ransom.  
+14. **Impact:** Techniques aimed at preventing the victim from accessing systems or data, often causing disruption or damage.  
 
-Example: An adversary saving network configuration values to a text file is performing a **Discovery tactic**, using the **Command and Scripting Interpreter technique**, and the **PowerShell sub-technique**.
+Each tactic includes many **techniques**, which are further broken down into **sub-techniques**. The most specific level is the **procedure**—the exact command or method an adversary uses.  
+
+**Example:** For example, in the ATT&CK framework the **tactic** might be *Credential Access*—the attacker’s goal is to steal usernames and passwords. One **technique** used to achieve this is *Keylogging*, where keystrokes are secretly recorded. The specific **procedure** could be installing and running a malicious program (e.g., `keylogger.exe`) that captures every keystroke and sends it back to the attacker’s server.   
 
 ---
 
 # The ATT&CK Matrix
 
-The **ATT&CK Matrix** is the main way the framework is visualized:  
-- **Columns = Tactics**  
+The **ATT&CK Matrix** is the primary tool used to visualize the framework:  
+- **Columns = Each column represent a Tactic**  
 - **Techniques = Listed under each tactic**  
 - **Sub-techniques = Expandable under techniques**  
 
-Each technique page includes:
+Each technique page includes:  
 - The technique’s name and description.  
 - A list of sub-techniques.  
-- Platforms it applies to.  
-- Data sources for finding related activity.  
-- Mitigation techniques to counter the behavior.  
+- The platforms it applies to.  
+- Data sources for detecting related activity.  
+- Mitigation strategies to counter the behavior.  
 
-This consistent structure makes ATT&CK an excellent tool for planning **blue team** and **red team** exercises.
+This consistent structure makes ATT&CK a powerful resource for planning both **Blue Team** and **Red Team** exercises.  
 
 ---
 
 # Mapping with ATT&CK
 
-Mapping means linking observed activity back to the ATT&CK framework.  
-It allows defenders to answer questions such as:
+Mapping is the process of linking observed activity to the ATT&CK framework in order to identify an attacker’s behavior. It helps security team answer key questions such as:  
 - Which tactic does this activity belong to?  
 - Which technique or sub-technique was used?  
 - What procedures did the adversary carry out?  
 
-By mapping logs or alerts to ATT&CK, organizations can identify gaps in their defenses and improve their detection strategies.
+By mapping logs or alerts to ATT&CK, organizations can uncover gaps in their defenses and strengthen their detection strategies.  
 
 ---
 
 # The ATT&CK Navigator
 
-The **ATT&CK Navigator** is an interactive way to work with the matrix.  
-It allows users to highlight, score, and layer techniques for analysis.
+The **ATT&CK Navigator** is an interactive way to work with the matrix. It allows users to highlight, score, and layer techniques for analysis.
 
-You can try it here:  
- [MITRE ATT&CK Navigator](https://mitre-attack.github.io/attacknavigator/enterprise/)
+The online version can be found here : [MITRE ATT&CK Navigator](https://mitre-attack.github.io/attacknavigator/)
 
 ---
 
-# Conclusion
+The **MITRE ATT&CK framework** provides defenders and researchers with a structured way to understand and anticipate adversary behavior. By studying the 14 tactics, exploring the associated techniques, and mapping activity back to ATT&CK, security teams can replicate adversary actions in a controlled environment and strengthen their defenses. Tools like the ATT&CK Navigator make this process more interactive and practical for both Blue and Red Team exercises.  
 
-The **MITRE ATT&CK framework** gives defenders and researchers a structured way to understand adversary behavior.  
-By learning the 14 tactics, studying techniques, and mapping activity back to ATT&CK, teams can replicate adversary actions in a safe environment and strengthen their defenses.  
-The ATT&CK Navigator makes this process interactive and easier to apply for both blue and red team exercises.
+These insights are drawn from *Practical Threat Intelligence and Data-Driven Threat Hunting*, **Chapter 4: Mapping the Adversary**, by Valentina Palacín.  
+
 
