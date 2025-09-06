@@ -12,7 +12,7 @@ When it comes to threat hunting or identifying intrusions in your systems, the m
 
 ---
 
-## Logs as the Primary Data Sources
+## Logs as The Primary Data Sources
 
 At the core, **system logs** and **network logs** are the primary sources of information for threat hunters and security analysts. Logs are essentially records of events—who logged in, what process started, what file was changed, or what request was made to a server.  
 
