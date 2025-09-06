@@ -8,88 +8,93 @@ tags:
   - Logs
   - Networking
 ---
-
-When it comes to threat hunting, the most valuable resource isn’t a fancy tool or a high-end appliance—it’s **data**. Without data, analysts have nothing to investigate. But where exactly does this data come from? And how does the underlying network shape what we see in our logs? Let’s break this down gradually.
+When it comes to threat hunting or identifying intrusions in your systems, the most valuable resource isn’t a sophisticated tool or high-end appliance—it’s **data**. Without data, analysts have nothing to investigate. But where does this data originate, and how can we make sense of it? In this post, we’ll explore how data is collected and how it can be interpreted to protect an organization’s infrastructure.  
 
 ---
 
-## The Foundation: Logs as Data Sources
+## Logs as the Primary Data Sources
 
-At the core, **system logs** and **network logs** are the main sources of information for threat hunters. Logs are essentially records of events—who logged in, what process started, what file was changed, or what request was made to a server.
+At the core, **system logs** and **network logs** are the primary sources of information for threat hunters and security analysts. Logs are essentially records of events—who logged in, what process started, what file was changed, or what request was made to a server.  
 
-Every log file is made up of entries, and those entries can contain four main types of information:
+Each log file is made up of entries, also referred to as **events**, and these entries can contain four main types of information:  
 
 - **Usage information** (how systems or apps are used)  
-- **Client requests and server responses**  
+- **Client requests and server responses** (records of requests entering or leaving your network)  
 - **Account activity** (logins, permissions, etc.)  
 - **Operational actions** (system changes, updates, etc.)  
 
-There isn’t a “perfect” set of logs or a single right amount of data. What’s useful depends on the organization’s goals and resources. A critical skill for identifying anomalies within your organization’s systems is the ability to interpret network architecture and recognize unusual patterns in both endpoint activity and network traffic.  
+There isn’t a “perfect” set of logs or a single correct amount of data. What’s useful depends on the organization’s goals and resources. A critical skill for identifying anomalies within systems is the ability to interpret network architecture and recognize unusual patterns in both endpoint activity and network traffic.  
+
+With this foundation in mind, let’s zoom out and look at the bigger picture—the network itself.  
 
 ---
 
-## Understanding the Network: High Level Overview
+## Understanding the Network: A High-Level Overview
 
 More often than not, bad actors deploy malware on a victim’s system to disrupt services or exfiltrate information. While attackers may disguise malware by running it under legitimate processes, they cannot alter the fundamental behavior of the operating system or the network. This is why a solid understanding of **networking fundamentals** is essential for every threat hunter.  
 
-Here are some basic netowrking setup:
+Here are some basic networking concepts:  
 
 - **Client-server vs. peer-to-peer (P2P):** In client-server setups, a central server provides services to clients. In P2P (like torrents), devices share files directly.  
-- **VLANs:** Virtual LANs group devices so they act as if they’re on the same wire. Traffic can’t cross between VLANs without a router or layer 3 switch, which adds segmentation and security.  
+- **VLANs:** Virtual LANs group devices so they act as if they’re on the same wire. Traffic cannot cross between VLANs without a router or layer 3 switch, which adds segmentation and security.  
 - **Gateways and routers:** A gateway connects different networks. Routers sit between your internal network and the internet, translating private addresses into public ones via **NAT (Network Address Translation)**.  
-- **Switches and bridges:** Switches use MAC addresses to forward packets efficiently inside a network. Bridges connect separate networks as if they were one.  
-- **Protocols:** Protocols are used to communicate in the right way.some common ones include DHCP (hands out IPs to devices), TCP/UDP (transport), DNS (resolves names to IPs), and HTTP/HTTPS (web traffic).  
+- **Switches and bridges:** Switches use MAC addresses to forward packets efficiently within a network. Bridges connect separate networks as if they were one.  
+- **Protocols:** Protocols define how systems communicate. Some common ones include DHCP (assigns IPs to devices), TCP/UDP (transport), DNS (resolves names to IPs), and HTTP/HTTPS (web traffic).  
 - **Wi-Fi essentials:** SSID names, encryption, and channels all affect security and performance.  
 
-It is important that as a security analyst we understand these basics and know how data moves—and what types of logs we can expect.
+Understanding these fundamentals is key to seeing how data flows. But networks aren’t the only valuable source of information—operating systems, especially Windows, provide a wealth of logs for deeper analysis.  
 
 ---
 
-## Log sources in Windows Machine
+## Log Sources in Windows Machines
 
-If you’re using Windows, one of the richest sources of log data is the **Event Viewer**. It stores several categories of logs:
+In Windows environments, one of the richest sources of log data is the **Event Viewer**, which stores several categories of logs:  
 
-- **Application logs:** Activities of installed apps.  
+- **Application logs:** Activities of installed applications.  
 - **Security logs:** Logins, audits, and account activity.  
 - **Setup logs:** OS updates and upgrades.  
-- **Application and service logs:** A deeper dive into Microsoft and third-party apps.  
+- **Application and service logs:** A deeper dive into Microsoft and third-party applications.  
 
-Advanced tools extend this further:
+Advanced tools extend logging even further:  
 
 - **Windows Management Instrumentation (WMI):** Enables local and remote management data collection.  
 - **Event Tracing for Windows (ETW):** Captures kernel-level events efficiently.  
 - **Sysmon (System Monitor):** Adds detailed process and driver activity logging.  
 - **File Integrity Monitoring (FIM):** Watches for changes to critical files.  
-- **PowerShell logs:** Critical because many attackers abuse PowerShell to execute malicious commands.  
+- **PowerShell logs:** A critical source of information, since many attackers abuse PowerShell to execute malicious commands.  
+
+While Windows provides a broad view of what’s happening on endpoints, the larger infrastructure—routers, DNS servers, and security tools—adds even more visibility into potential threats.  
 
 ---
 
-## Logs from Networking tools
+## Logs from Networking Tools
 
-Outside endpoints, networking gear and infrastructure also generate crucial logs:
+Beyond endpoints, networking gear and infrastructure also generate crucial logs:  
 
 - **Routers and switches:** Record traffic patterns and connectivity.  
-- **DNS servers:** Show what domains are being queried.  
+- **DNS servers:** Show which domains are being queried.  
 - **Web servers:** Log requests and responses to hosted content.  
 - **Active Directory and Kerberos:** Track user authentication and access attempts.  
 - **IAM/PAM systems:** Record privileged access and identity events.  
 
-Security software contributes as well. For instance, **Windows Defender**, a native anti-virus software for windows, produces logs inside Event Viewer that may indicate malware activity. Antivirus alerts, when mapped with threat intelligence, can even reveal links to advanced persistent threat (APT) groups.
+Security software also provides valuable insights. For example, **Windows Defender**, the native antivirus software for Windows, produces logs in Event Viewer that may indicate malware activity. Antivirus alerts, when correlated with threat intelligence, can even reveal links to advanced persistent threat (APT) groups.  
+
+When all of these logs are combined—endpoint, operating system, and infrastructure—they form a holistic view of the environment. That’s where real threat hunting begins.  
 
 ---
 
 ## Pulling It All Together
 
-Ultimately, threat hunting is about correlating the logs collected from **endpoints, networks, and security systems**. A summary of the logs each of these three categories produces are:
+Ultimately, threat hunting is about correlating logs collected from **endpoints, networks, and security systems**. A summary of the logs from each of these three categories includes:  
 
 - **Endpoints:** Application, system, PowerShell, and Sysmon logs.  
-- **Networks:** Router, switch, DNS, and webserver data.  
+- **Networks:** Router, switch, DNS, and web server data.  
 - **Security systems:** Active Directory, Kerberos, IAM, antivirus, and EDR tools.  
 
-By combining these data sources and layering them over a solid understanding of the system infrastructre of the organization, a security analyst can move beyond random alerts and start identifying real threats hiding in plain sight.
+By combining these data sources and layering them on top of a solid understanding of the organization’s system infrastructure, security analysts can move beyond random alerts and begin identifying real threats hiding in plain sight.  
 
 ---
 
-Last but not least, There is no “one-size-fits-all” data source in threat hunting. Effective hunting requires a deep understanding of your environment, the ability to interpret logs, and the context to relate them back to your organization’s unique needs.  
+Last but not least, there is no “one-size-fits-all” data source in threat hunting. Effective hunting requires a deep understanding of the environment, the ability to interpret logs, and the context to relate them back to an organization’s unique needs.  
 
 The insights presented here are adapted from _Practical Threat Intelligence and Data-Driven Threat Hunting_, **Chapter 3: Where Does the Data Come From**, by Valentina Palacín.  
