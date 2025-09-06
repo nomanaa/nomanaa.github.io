@@ -24,28 +24,28 @@ Every log file is made up of entries, and those entries can contain four main ty
 - **Account activity** (logins, permissions, etc.)  
 - **Operational actions** (system changes, updates, etc.)  
 
-There isn’t a “perfect” set of logs or a single right amount of data. What’s useful depends on the organization’s goals and resources. A key skill is learning how to interpret the network architecture and spot unusual patterns in both endpoint activity and network traffic.
+There isn’t a “perfect” set of logs or a single right amount of data. What’s useful depends on the organization’s goals and resources. A critical skill for identifying anomalies within your organization’s systems is the ability to interpret network architecture and recognize unusual patterns in both endpoint activity and network traffic.  
 
 ---
 
-## Understanding the Network: Why Basics Matter
+## Understanding the Network: High Level Overview
 
-Malware may disguise itself by running under legitimate processes, but it can’t change how the operating system or the network itself works. That’s why learning **networking fundamentals** is so important for a threat hunter.
+More often than not, bad actors deploy malware on a victim’s system to disrupt services or exfiltrate information. While attackers may disguise malware by running it under legitimate processes, they cannot alter the fundamental behavior of the operating system or the network. This is why a solid understanding of **networking fundamentals** is essential for every threat hunter.  
 
-Here are some essentials:
+Here are some basic netowrking setup:
 
 - **Client-server vs. peer-to-peer (P2P):** In client-server setups, a central server provides services to clients. In P2P (like torrents), devices share files directly.  
 - **VLANs:** Virtual LANs group devices so they act as if they’re on the same wire. Traffic can’t cross between VLANs without a router or layer 3 switch, which adds segmentation and security.  
 - **Gateways and routers:** A gateway connects different networks. Routers sit between your internal network and the internet, translating private addresses into public ones via **NAT (Network Address Translation)**.  
 - **Switches and bridges:** Switches use MAC addresses to forward packets efficiently inside a network. Bridges connect separate networks as if they were one.  
-- **Protocols:** Common ones include DHCP (hands out IPs to devices), TCP/UDP (transport), DNS (resolves names to IPs), and HTTP/HTTPS (web traffic).  
+- **Protocols:** Protocols are used to communicate in the right way.some common ones include DHCP (hands out IPs to devices), TCP/UDP (transport), DNS (resolves names to IPs), and HTTP/HTTPS (web traffic).  
 - **Wi-Fi essentials:** SSID names, encryption, and channels all affect security and performance.  
 
-Together, these basics explain how data moves—and what types of logs we can expect.
+It is important that as a security analyst we understand these basics and know how data moves—and what types of logs we can expect.
 
 ---
 
-## Windows as a Log Goldmine
+## Log sources in Windows Machine
 
 If you’re using Windows, one of the richest sources of log data is the **Event Viewer**. It stores several categories of logs:
 
@@ -90,6 +90,6 @@ By combining these data sources and layering them over a solid understanding of 
 
 ---
 
-### Key Takeaway
+There is no “one-size-fits-all” data source in threat hunting. Effective hunting requires a deep understanding of your environment, the ability to interpret logs, and the context to relate them back to your organization’s unique needs.  
 
-There’s no “one-size-fits-all” data source. Effective threat hunting comes from knowing your environment, understanding its logs, and interpreting them through the lens of networking fundamentals.
+The insights presented here are adapted from _Practical Threat Intelligence and Data-Driven Threat Hunting_, **Chapter 3: Where Does the Data Come From**, by Valentina Palacín.  
