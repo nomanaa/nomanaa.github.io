@@ -29,8 +29,7 @@ Key features of the ATT&CK Framework include:
 
 ## Tactics, Techniques and Procedures 
 
-The MITRE ATT&CK framework is organized into 14 tactics, each representing an attacker’s objective and containing a set of related techniques. In other words, a tactic explains the *“why”* behind an adversary’s behavior.  
-The list of tactics are below: 
+The MITRE ATT&CK framework is organized into 14 tactics, each representing an attacker’s objective and containing a set of related techniques. In other words, a tactic explains the *“why”* behind an adversary’s behavior. The list of tactics are below: 
 
 1. **Reconnaissance:** The objective of this tactic is to gather as much information as possible about the victim.  
 2. **Resource Development:** In this stage, the attacker assesses the resources they can use to support the operation. This can range from legitimate tools to stolen software. *(Reconnaissance and Resource Development fall into the pre-breach stage.)*  
